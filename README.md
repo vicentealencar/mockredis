@@ -16,11 +16,11 @@ used to patch instances of the *redis client*.
 
 For example, using the [mock][mock] library:
                    
-    @patch('redis.Redis', mock_redis_client)
+    @patch('redis.Redis', mock_redis_client())
                                
 Or:
                                        
-    @patch('redis.StrictRedis', mock_strict_redis_client)
+    @patch('redis.StrictRedis', mock_strict_redis_client())
                                                
 ## Attribution
 
